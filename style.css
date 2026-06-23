@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 .header__nav {
     font-size: 32px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 600;
     color: #bdbdbd;
 
     display: flex;
@@ -187,10 +187,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .about__title {
-    font-size: 48px;
+    font-size: 52px;
     line-height: 1.1;
     font-weight: 600;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 10px;
 }
 
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .carousel {
-    margin: 50px auto 100px;
+    margin: 25px auto 100px;
     width: 100%;
     display: flex;
     overflow-x: auto;
@@ -420,33 +420,13 @@ h1, h2, h3, h4, h5, h6, p, a {
         height: auto;
     }
 
-    .about__container {  
-        padding: 0 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
     .about__content {
         align-items: center;
         text-align: center;
     }
     .about__title {
-        font-size: 66px;
-        line-height: 1.1;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
-    .about__main-text {
-        font-size: 38px;
-        line-height: 1.1;
-    }
-    .about__text {
-        margin-bottom: 40px;
-    }
-
-    .branch-img {
-        display: none;
-    } 
 
     .products__title {
         margin-top: 80px;
@@ -488,26 +468,27 @@ h1, h2, h3, h4, h5, h6, p, a {
         font-size: 24px;
     }
 
-    .about__container {
-        padding: 0 40px;
+    .about__content {
+        padding: 0 20px;
     }
     .about__title {
-        font-size: 52px;
+        font-size: 42px;
         line-height: 1.1;
-        margin-bottom: 20px;
+        margin-top: 50px;
     }
     .about__main-text {
-        font-size: 32px;
+        font-size: 28px;
         line-height: 1.1;
     }
     .about__text {
         font-size: 18px;
         line-height: 1.1;
-        margin-bottom: 40px;
     }
-    .about__image {
-        width: 400px;
-        height: 400px;
+    .carousel {
+        margin: 10px auto 25px;
+    }
+    .card-img {
+        max-width: 250px;
     }
 
     .products__title {
