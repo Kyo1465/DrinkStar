@@ -6,7 +6,7 @@ menuBtn.addEventListener('click', () => {
 } );
 
 
-const anchors = document.querySelectorAll(".header__nav a");
+const anchors = document.querySelectorAll(".header__nav a, .hero__main a");
 
 anchors.forEach(anc =>{
   anc.addEventListener("click", function(event) {
@@ -15,34 +15,16 @@ anchors.forEach(anc =>{
     const id = anc.getAttribute("href");
     
     const elem = document.querySelector(id);
+    let offset = 0;
+    
+    // Для footer добавляем отрицательный отступ, чтобы компенсировать его margin-top
+    if (id === "#footer") {
+      offset = -100;
+    }
 
     window.scroll({
-      top: elem.offsetTop - 80,
+      top: elem.offsetTop + offset,
       behavior: "smooth"
     });
   });
 })
-
-
-const swiper = new Swiper('.projects__slider', {
-
-    slidesPerView: 1,
-    spaceBetween: 20,
-
-    loop: true,
-
-    breakpoints: {
-        640: {
-        slidesPerView: 2,
-        },
-        1024: {
-        slidesPerView: 3,
-        },
-    },
-
-
-    navigation: {
-        nextEl: '.projects__arrow-next',
-        prevEl: '.projects__arrow-prev',
-    },
-    });
