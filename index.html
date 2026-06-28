@@ -18,23 +18,31 @@
     <section class="hero">
         <div class="container hero__container">
 
-            <nav class="header__nav">
-                <button class="header__nav-btn">
-                    <span></span>
-                </button>
-                <ul>
-                    <li class="header__nav-item"><a href="#header">Главная</a></li>
-                    <li class="header__nav-item"><a href="#about">Про нас</a></li>
-                    <li class="header__nav-item"><a href="#products">Меню</a></li>
-                    <li class="header__nav-item"><a href="#footer">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="hero__nav">
+                <div>
+                    <img class="header__logo" src="images/logo.png" alt="logo">
+                </div>
+
+                <div>
+                    <nav class="header__nav">
+                        <button class="header__nav-btn">
+                            <span></span>
+                        </button>
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item"><a href="#header">Главная</a></li>
+                            <li class="header__nav-item"><a href="#about">Про нас</a></li>
+                            <li class="header__nav-item"><a href="#menu">Меню</a></li>
+                            <li class="header__nav-item"><a href="#footer">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 
             <div class="hero__main">
                 <div class="hero__content">
                     <h2 class="hero__title">Drinkstar</h2>
                     <p class="hero__main-text">Больше, чем кофе</p>
-                    <div class="btn__color"><a class="hero__btn" href="#products">Посмотреть меню</a></div>
+                    <div class="btn__color"><a class="hero__btn" href="#menu">Посмотреть меню</a></div>
                 </div>
     
                 <div class="hero__image">
@@ -85,83 +93,140 @@
         </div>
     </section>
 
-    <section id="products" class="products">
-        <div class="container products__container">
-            <div class="products__content">
-                <div class="products__content-text">
-                    <a href="#" class="about__link">
-                        <h2 class="products__title">Our products</h2>
-                    </a>
-                    <p class="products__text">we provide Quality Product</p>
-                </div>
-            </div>
+    <section id="menu" class="menu">
+        <div class="container menu__container">
 
-            <div class="products__cards">
-                <ul class="cards__list">
-                    <li class="cards__item">
-                        <img class="cards__img" src="images/products-4.jpg">
-                        <h4 class="cards__title">Americano</h4>
-                        <p class="cards__text">cheer up with us</p>
-                    </li>
-                    <li class="cards__item">
-                        <img class="cards__img" src="images/products-2.jpg">
-                        <h4 class="cards__title">Cappuccino</h4>
-                        <p class="cards__text">Ideal for morning consumption</p>
-                    </li>
-                    <li class="cards__item">
-                        <img class="cards__img" src="images/products-3.webp">
-                        <h4 class="cards__title">Desserts</h4>
-                        <p class="cards__text">take some sweet mood</p>
-                    </li>
-                    <li class="cards__item">
-                        <img class="cards__img" src="images/ptoducts.webp">
-                        <h4 class="cards__title">Dishes</h4>
-                        <p class="cards__text">we won't make you starve</p>
-                    </li>
-                </ul>
-            </div>
+            <h2 class="menu__title menu__list-item">Наше меню</h2>
+
+            <ul class="menu__list">
+
+                <li class="menu__list-item">
+                    <div><img src="images/menu/menu_1.png" alt="img" class="menu__list-image"></div>
+                    <div>
+                        <h3 class="menu__list-title">Латте</h3>
+                        <p class="menu__list-text">DrinkStar</p>
+                    </div>
+                </li>
+                <li class="menu__list-item">
+                    <div><img src="images/menu/menu_2.png" alt="img" class="menu__list-image"></div>
+                    <div>
+                        <h3 class="menu__list-title">Ice Латте</h3>
+                        <p class="menu__list-text">DrinkStar</p>
+                    </div>
+                </li>
+                <li class="menu__list-item">
+                    <div><img src="images/menu/menu_3.png" alt="img" class="menu__list-image"></div>
+                    <div>
+                        <h3 class="menu__list-title">Матча</h3>
+                        <p class="menu__list-text">DrinkStar</p>
+                    </div>
+                </li>
+                <li class="menu__list-item">
+                    <div><img src="images/menu/menu_4.png" alt="img" class="menu__list-image"></div>
+                    <div>
+                        <h3 class="menu__list-title">Милк Шейк</h3>
+                        <p class="menu__list-text">DrinkStar</p>
+                    </div>
+                </li>
+            </ul>
+    
+            <h2 class="menu__main-title menu__list-item">Фирменные</h2>
+            
+            <ul class="menu__list-2">
+                <li class="menu__list-item">
+                    <div><img src="images/menu/menu_5.png" alt="img" class="menu__list-image"></div>
+                    <div>
+                        <h3 class="menu__list-title">Брауни Соленая Карамель</h3>
+                        <p class="menu__list-text">DrinkStar</p>
+                    </div>
+                </li>
+                <li class="menu__list-item">
+                    <div><img src="images/menu/menu_6.png" alt="img" class="menu__list-image"></div>
+                    <div>
+                        <h3 class="menu__list-title">Мокачино Для Мужчины</h3>
+                        <p class="menu__list-text">DrinkStar</p>
+                    </div>
+                </li>
+                <li class="menu__list-item">
+                    <div><img src="images/menu/menu_7.png" alt="img" class="menu__list-image"></div>
+                    <div>
+                        <h3 class="menu__list-title">Арахисовое Наслаждение</h3>
+                        <p class="menu__list-text">DrinkStar</p>
+                    </div>
+                </li>
+                <li class="menu__list-item">
+                    <div><img src="images/menu/menu_8.png" alt="img" class="menu__list-image"></div>
+                    <div>
+                        <h3 class="menu__list-title">Поцелуй Ангелочка</h3>
+                        <p class="menu__list-text">DrinkStar</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
 
     <footer id="footer" class="footer">
         <div class="container footer__container">
-            
             <div class="footer__logo">
-                <h3 class="footer__logo-title">Bloom <br> Cafe</h3>
-                <p class="copy">Copyright © 2026 Bloom Cafe</p>
+                <img class="logo-img" src="images/logo.png" alt="logo">
+                <p class="logo__text">Copyright © 2026 DrinkStar</p>
             </div>
 
-            <div class="footer__content">
-                <h3 class="footer__contacts-title">
-                    <a href="#footer">Our contacts</a>
-                </h3>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <img class="footer__list-icon" src="images/socials/inst.svg" alt="icon">
+                    <a href="#" class="footer__list-text">drinkstar_kz</a>
+                </li>
+                <li class="footer__list-item">
+                    <img class="footer__list-icon" src="images/socials/phone.svg" alt="icon">
+                    <a href="tel:+77475660361">+7-747-566-03-61</a>
+                </li>
+                <li class="footer__list-item">
+                    <img class="footer__list-icon" src="images/socials/phone.svg" alt="icon">
+                    <a href="tel:+77088373874">+7-708-837-38-74</a>
+                </li>
+                <li class="footer__list-item">
+                    <img class="footer__list-map-icon" src="images/socials/map.svg" alt="icon">
+                    <a href="https://go.2gis.com/4lws5">https://go.2gis.com/4lws5</a>
+                </li>
+            </ul>
 
-                <ul class="footer__list">
-                    <li class="footer__list-item">
-                        <img src="images/footer-icons/phone.svg" style="width: 20px; height: 20px; margin-right: 5px;" alt="icon" class="footer__icon">
-                        <a href="tel:+15550174832">tel: +1 (555) 017-4832</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <img src="images/footer-icons/inst.svg" style="width: 20px; height: 20px; margin-right: 5px;" alt="icon" class="footer__icon">
-                        <a href="#" class="footer__link">@bloomcafe</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <img src="images/footer-icons/face.svg" style="width: 20px; height: 20px; margin-right: 5px;" alt="icon" class="footer__icon">
-                        <a href="#" class="footer__link">Bloom Cafe</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <img src="images/footer-icons/tt.svg" style="width: 20px; height: 20px; margin-right: 5px;" alt="icon" class="footer__icon">
-                        <a href="#" class="footer__link">@bloom_cafe</a>
-                    </li>
-                    <li class="footer__list-item">
-                        <img src="images/map.svg" style="width: 25px; height: 25px; margin-right: 5px;" alt="Map Icon">
-                        Jl. Raya Bogor Km. 33, Cimanggis, Depok
-                    </li>
-                </ul>
-            </div>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <img class="footer__list-map-icon" src="images/socials/map.svg" alt="icon">
+                    <p class="footer__list-text">Конаев 12/2</p>
+                </li>
+                <li class="footer__list-item">
+                    <img class="footer__list-map-icon" src="images/socials/map.svg" alt="icon">
+                    <p class="footer__list-text">Ауэзова 2</p>
+                </li>
+                <li class="footer__list-item">
+                    <img class="footer__list-map-icon" src="images/socials/map.svg" alt="icon">
+                    <p class="footer__list-text">Туран 50 (ULYTAU GROUP)</p>
+                </li>
+                <li class="footer__list-item">
+                    <img class="footer__list-map-icon" src="images/socials/map.svg" alt="icon">
+                    <p class="footer__list-text">Кунаева 4 (Казмедиа)</p>
+                </li>
+                <li class="footer__list-item">
+                    <img class="footer__list-map-icon" src="images/socials/map.svg" alt="icon">
+                    <p class="footer__list-text">Республика 24 (бц парасат)</p>
+                </li>
+                <li class="footer__list-item">
+                    <img class="footer__list-map-icon" src="images/socials/map.svg" alt="icon">
+                    <p class="footer__list-text">Омарова 12</p>
+                </li>
+                <li class="footer__list-item">
+                    <img class="footer__list-map-icon" src="images/socials/map.svg" alt="icon">
+                    <p class="footer__list-text">Туран 13</p>
+                </li>
+                <li class="footer__list-item">
+                    <img class="footer__list-map-icon" src="images/socials/map.svg" alt="icon">
+                    <p class="footer__list-text">Момышулы 2/11</p>
+                </li>
+            </ul>
         </div>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
