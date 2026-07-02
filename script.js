@@ -17,11 +17,6 @@ anchors.forEach(anc =>{
     const elem = document.querySelector(id);
     let offset = 0;
     
-    // Для footer добавляем отрицательный отступ, чтобы компенсировать его margin-top
-    if (id === "#footer") {
-      offset = -100;
-    }
-
     window.scroll({
       top: elem.offsetTop + offset,
       behavior: "smooth"
