@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
     margin-top: 30px;
 }
 
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding-top: 0;
+    padding: 0 20px;
 }
 
 .header__nav-item {
@@ -268,7 +268,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .about__title {
-    font-size: 48px;
+    font-size: 42px;
     line-height: 1.1;
     font-weight: 600;
     margin-top: 80px;
@@ -421,6 +421,105 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 
+.reviews{
+    padding: 50px 15px;
+    user-select: none;
+}
+
+.reviews__title {
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 600;
+}
+
+.reviews .reviews__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.review__box {
+    position: relative;
+    width: 100%;
+    max-width: 950px;
+    border-radius: 18px;
+    background-color: #f3f3f3;
+    padding: 30px 20px 20px;
+    box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
+}
+
+.review__star {
+    max-width: 170px;
+    height: auto;
+}
+
+.review__box .review__swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 420px;
+}
+
+.review__box .review__swiper .swiper-slide .swiper__slide-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 30px 40px;
+    color: #111;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
+    text-shadow: none;
+}
+
+.review__box .review__swiper .swiper-slide .swiper__slide-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #222;
+    margin: 0;
+}
+
+.review__box .review__swiper .swiper__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.review__box .review__swiper .swiper__buttons .fas {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #202021;
+}
+
+.review__box .review__swiper .swiper__buttons .fas img {
+    width: 18px;
+    height: auto;
+    filter: invert(1);
+}
+
+.review__title-info h2 {
+    font-size: 18px;
+}
+.review__title-info h4 {
+    margin: 0;
+    font-weight: 400;
+    color: #555;
+}
+
+.swiper__slide-content {
+    margin-bottom: 10px;
+}
+
 .footer {
     background-color: #0d0e1a;
 }
@@ -511,6 +610,13 @@ h1, h2, h3, h4, h5, h6, p, a {
     .menu__container {
         padding: 0 40px;
     }
+
+    .header__logo {
+        display: none;
+    }
+    .header__nav {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -563,6 +669,22 @@ h1, h2, h3, h4, h5, h6, p, a {
     .carousel {
         margin: 10px auto 25px;
     }
+
+    .review__box {
+        max-width: 100%;
+        width: calc(100% - 16px);
+        padding: 16px 8px 12px;
+        margin: 0 auto;
+    }
+
+    .review__box .review__swiper .swiper-slide {
+        min-height: auto;
+    }
+
+    .review__box .review__swiper .swiper-slide .swiper__slide-content {
+        padding: 18px 14px;
+        gap: 18px;
+    }
 }
 
 @media (max-width: 660px) {
@@ -586,8 +708,8 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 @media (max-width: 540px) {
-    .header__logo {
-        display: none;
+    .header__nav {
+        margin-top: 0;
     }
     .hero__nav {
         display: flex;
@@ -635,6 +757,37 @@ h1, h2, h3, h4, h5, h6, p, a {
     .menu__title {
         font-size: 42px;
         margin: 40px 0 30px;
+    }
+
+    .review__box {
+        width: calc(100% - 12px);
+        max-width: 100%;
+        padding: 14px 6px 10px;
+        margin: 0 auto;
+    }
+    .review__box .review__swiper .swiper-slide {
+        min-height: auto;
+    }
+    .review__box .review__swiper .swiper-slide .swiper__slide-content {
+        padding: 16px 12px;
+        gap: 14px;
+    }
+    .review__box .review__swiper .swiper-slide .swiper__slide-content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .review__star {
+        max-width: 130px;
+    }
+    .review__box .review__swiper .swiper__buttons {
+        gap: 14px;
+    }
+    .review__box .review__swiper .swiper__buttons .fas {
+        width: 44px;
+        height: 44px;
+    }
+    .swiper-slide {
+        max-height: 500px;
     }
 }
 
