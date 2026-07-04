@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .header__nav-item {
+    white-space: nowrap;
     transition: transform 0.3s ease-in-out;
 
     &:hover {
@@ -142,8 +143,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     width: 100%;
 }
 
-.header__nav ul {
+.header__nav-list {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .header__nav li + li {
@@ -160,7 +163,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .hero__main {
@@ -430,6 +433,7 @@ h1, h2, h3, h4, h5, h6, p, a {
     font-size: 42px;
     line-height: 1.1;
     font-weight: 600;
+    text-align: center;
 }
 
 .reviews .reviews__container {
@@ -620,6 +624,10 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 @media (max-width: 1080px) {
+    .header__nav li + li {
+        margin-left: 50px;
+    }
+
     .cup {
         display: none;
     }
@@ -635,10 +643,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 @media (max-width: 930px) {
-    .header__nav li + li {
-        margin-left: 50px;
-    }
-
     .footer__container {
         display: flex;
         flex-direction: column;
@@ -704,6 +708,13 @@ h1, h2, h3, h4, h5, h6, p, a {
     .menu__list-title, .menu__list-2-title {
         padding: 0;
         font-size: 32px;
+    }
+    .menu__list {
+        gap: 40px;
+    }
+
+    .menu__list-2 {
+        gap: 40px;
     }
 }
 
