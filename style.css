@@ -583,7 +583,41 @@ h1, h2, h3, h4, h5, h6, p, a {
     margin-right: 10px;
 }
 
+.scroll-top-btn {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    background-color: #bdbdbd;
+    color: #202021;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
 
+.scroll-top-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top-btn__arrow {
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 700;
+}
 
 
 @media (max-width: 1370px) {

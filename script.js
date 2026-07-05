@@ -24,6 +24,28 @@ anchors.forEach(anc => {
     });
 });
 
+const scrollTopBtn = document.querySelector('.scroll-top-btn');
+
+if (scrollTopBtn) {
+    const toggleScrollTopBtn = () => {
+        if (window.scrollY > 400) {
+            scrollTopBtn.classList.add('show');
+        } else {
+            scrollTopBtn.classList.remove('show');
+        }
+    };
+
+    window.addEventListener('scroll', toggleScrollTopBtn);
+    toggleScrollTopBtn();
+
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
 const swiper2 = new Swiper('.reviews__slider', {
     loop: true,
     slidesPerView: 1,
