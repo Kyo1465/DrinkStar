@@ -3,8 +3,11 @@ const menu = document.querySelector('.header__nav ul');
 
 if (menuBtn && menu) {
     menuBtn.addEventListener('click', () => {
-        menu.classList.toggle('active');
+        const isActive = menu.classList.toggle('active');
+        menuBtn.setAttribute('aria-expanded', isActive);
     });
+    // set initial aria state
+    menuBtn.setAttribute('aria-expanded', menu.classList.contains('active'));
 }
 
 const anchors = document.querySelectorAll('.header__nav a, .hero__main a');
@@ -21,6 +24,12 @@ anchors.forEach(anc => {
             top: elem.offsetTop,
             behavior: 'smooth'
         });
+
+        // close mobile menu if it's open
+        if (menu && menu.classList.contains('active')) {
+            menu.classList.remove('active');
+            if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+        }
     });
 });
 
