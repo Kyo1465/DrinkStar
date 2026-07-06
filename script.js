@@ -6,7 +6,7 @@ if (menuBtn && menu) {
         const isActive = menu.classList.toggle('active');
         menuBtn.setAttribute('aria-expanded', isActive);
     });
-    // set initial aria state
+
     menuBtn.setAttribute('aria-expanded', menu.classList.contains('active'));
 }
 
@@ -25,7 +25,6 @@ anchors.forEach(anc => {
             behavior: 'smooth'
         });
 
-        // close mobile menu if it's open
         if (menu && menu.classList.contains('active')) {
             menu.classList.remove('active');
             if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');

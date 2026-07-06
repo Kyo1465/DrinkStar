@@ -20,29 +20,30 @@
         <div class="stars"></div>
     </div>
 
-    <section class="hero">
+    <section id="header" class="hero">
         <div class="container hero__container">
+            <header class="site-header">
+                <a class="site-header__brand" href="#header" aria-label="DrinkStar home">
+                    <img class="site-header__logo" src="images/logo.png" alt="DrinkStar logo">
+                </a>
 
-            <div class="hero__nav">
-                <div>
-                    <img class="header__logo" src="images/logo.png" alt="logo">
-                </div>
+                <h2 class="site-header__title">DRINKSTAR</h2>
 
-                <div>
-                    <nav class="header__nav">
-                        <button class="header__nav-btn">
-                            <span></span>
-                        </button>
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item"><a href="#header">Главная</a></li>
-                            <li class="header__nav-item"><a href="#about">Про нас</a></li>
-                            <li class="header__nav-item"><a href="#menu">Меню</a></li>
-                            <li class="header__nav-item"><a href="#reviews">Отзывы</a></li>
-                            <li class="header__nav-item"><a href="#footer">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+                <nav class="header__nav" aria-label="Primary navigation">
+                    <button class="header__nav-btn" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="header-nav-list">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul id="header-nav-list" class="header__nav-list">
+                        <li class="header__nav-item"><a href="#header">Главная</a></li>
+                        <li class="header__nav-item"><a href="#about">Про нас</a></li>
+                        <li class="header__nav-item"><a href="#menu">Меню</a></li>
+                        <li class="header__nav-item"><a href="#reviews">Отзывы</a></li>
+                        <li class="header__nav-item"><a href="#footer">Контакты</a></li>
+                    </ul>
+                </nav>
+            </header>
 
             <div class="hero__main">
                 <div class="hero__content">
