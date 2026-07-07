@@ -20,29 +20,31 @@
         <div class="stars"></div>
     </div>
 
-    <section class="hero">
-        <div class="container hero__container">
-
-            <div class="hero__nav">
-                <div>
-                    <img class="header__logo" src="images/logo.png" alt="logo">
-                </div>
-
-                <div>
-                    <nav class="header__nav">
-                        <button class="header__nav-btn">
-                            <span></span>
-                        </button>
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item"><a href="#header">Главная</a></li>
-                            <li class="header__nav-item"><a href="#about">Про нас</a></li>
-                            <li class="header__nav-item"><a href="#menu">Меню</a></li>
-                            <li class="header__nav-item"><a href="#reviews">Отзывы</a></li>
-                            <li class="header__nav-item"><a href="#footer">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo" href="#hero" aria-label="DrinkStar">
+                <img class="logo-img" src="images/logo.png" alt="DrinkStar logo">
             </div>
+
+            <h2 class="header__title">DRINKSTAR</h2>
+
+            <nav class="header__nav">
+                <button class="header__nav-btn" type="button" aria-label="Открыть меню" aria-expanded="false">
+                    <span></span>
+                </button>
+
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#about">Про нас</a></li>
+                    <li class="header__nav-item"><a href="#menu">Меню</a></li>
+                    <li class="header__nav-item"><a href="#reviews">Отзывы</a></li>
+                    <li class="header__nav-item"><a href="#footer">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container hero__container">
 
             <div class="hero__main">
                 <div class="hero__content">
