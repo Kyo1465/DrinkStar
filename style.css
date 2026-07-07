@@ -77,12 +77,9 @@ h1, h2, h3, h4, h5, h6, p, a {
     gap: 16px;
 }
 
-.header__logo {
+.header__logo-img {
     max-width: 72px;
     flex-shrink: 0;
-}
-
-.header__logo img {
     width: 100%;
     height: auto;
 }
@@ -749,6 +746,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     .card-img {
         max-width: 250px;
     }
+
+    .footer__logo {
+        margin: 40px 0 70px;
+    }
 }
 
 @media (max-width: 780px) {
@@ -801,6 +802,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 @media (max-width: 540px) {
+    .header__container {
+        grid-template-columns: 45px 1fr 44px;
+    }
     .header__title {
         font-size: 24px;
     }
@@ -828,13 +832,13 @@ h1, h2, h3, h4, h5, h6, p, a {
         border: none;
         padding: 0;
     }
-    .logo-img {
+    .header__logo-img, .header__logo-container {
         max-width: 45px;
     }
     .hero__title {
         font-size: 52px;
         line-height: 1.1;
-        margin-top: 40px;
+        margin-top: 60px;
     }
     .hero__main-text {
         margin-bottom: 20px;
@@ -926,7 +930,7 @@ h1, h2, h3, h4, h5, h6, p, a {
         margin: 30px 0 0;
     }
     .menu__list-title, .menu__list-2-title {
-        font-size: 20px;
+        font-size: 24px;
     }
     .menu__list-text {
         font-size: 18px;
@@ -941,8 +945,11 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 @media (max-width: 450px) {
+    .about__container {
+        padding: 0 20px;
+    }
     .about__title {
-        font-size: 32px;
+        font-size: 28px;
         margin-top: 10px;
         margin-bottom: 20px;
     }
