@@ -4,9 +4,11 @@ body {
     font-style: normal;
     color: #bdbdbd;
     background: radial-gradient(circle at 50% 80%,
+        #111633 25%,
         #0d0d20 50%,
-        #0e1129 75%,
-        #020205 100%);
+        #14193b 75%,
+        #020205 100%
+    );
 }
 
 img {
